@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Registrations</title>
+
+	<!-- Style sheets -->
+	<link href="./Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-app="registrations" ng-controller="registrationEditCtrl as vm">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand">Registrations</div>
+			</div>
+		</div>
+	</nav>
+	<form ng-hide ="vm.isLoggedIn" class="form-horizontal"
+		  name="registrationForm"
+		  novalidate>
+		<fieldset>
+			<legend>New Registration</legend>
+			<div class="form-group"
+				 ng-class="{'has-error':registrationForm.inputProductName.$invalid &&
+                                    registrationForm.inputProductName.$dirty}">
+				<label class="col-md-2 control-label"
+					   for="inputUserName">User Name</label>
+
+				<div class="col-md-4">
+					<input class="form-control"
+						   id="inputUserName"
+						   name="inputUserName"
+						   type="text"
+						   placeholder="User Name (required)"
+						   ng-model="vm.registration.userName"
+						   required
+						   ng-minlength="4"
+						   ng-maxlength="25" />
+				</div>
+				<span class="help-block has-error">
+					<span ng-show="registrationForm.inputUserName.$error.required">
+						User name is required.
+					</span>
+					<span ng-show="registrationForm.inputUserName.$error.maxlength">
+						User name cannot exceed 25 characters in length.
+					</span>
+				</span>
+			</div>
+
+			<div class="form-group"
+				 ng-class="{'has-error':registrationForm.inputEmailId.$invalid &&
+                                    registrationForm.inputEmailId.$dirty}">
+				<label class="col-md-2 control-label" for="inputEmailId">Email Id</label>
+
+				<div class="col-md-4">
+					<input class="form-control"
+						   id="inputEmailId"
+						   name="inputEmailId"
+						   type="text"
+						   placeholder="Email Id(required)"
+						   ng-model="vm.registration.emailId"
+						   required>
+				</div>
+				<span class="help-block has-error"
+					  ng-show="registrationForm.inputEmailId.$invalid ">
+					Email Id is required
+				</span>
+			</div>
+			<div class="form-group">
+				<div class="col-md-4 col-md-offset-2">
+					<span>
+						<button class="btn btn-primary"
+								style="width:80px;margin-right:10px"
+								ng-click="vm.submit()"
+								ng-disabled="registrationForm.$invalid">
+							Save
+						</button>
+					</span>
+					<span>
+						<button class="btn btn-default"
+								style="width:70px"
+								ng-click="vm.cancel(registrationForm)">
+							Cancel
+						</button>
+					</span>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+
+	<div ng-if="vm.isLoggedIn" class="container">
+		<div ng-include="'app/registrations/registrationView.html'"></div>
+	</div>
+
+	<!-- Library Scripts -->
+	<script src="./scripts/angular.js"></script>
+	<script src="Scripts/angular-resource.js"></script>
+	<!-- Application Script -->
+	<script src="app/app.js"></script>
+
+	<!-- Services -->
+	<script src="app/common/common.services.js"></script>
+	<script src="app/common/registrationResource.js"></script>
+
+	<!-- Product Controllers -->
+	<script src="app/registrations/registratonctrl.js"></script>
+	<script src="app/registrations/registrationEditCtrl.js"></script>
+</body>
+
+</html>

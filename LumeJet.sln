@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LumeJet.WebApi", "LumeJet.WebApi\LumeJet.WebApi.csproj", "{36F31B1A-AC38-4FE1-AE6D-12EB504A05C8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LumeJet.Client", "LumeJet.Client\", "{D57E10E3-7937-4F50-AEF4-E0969FBCEC1E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58475"
+		Debug.AspNetCompiler.PhysicalPath = "LumeJet.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58475\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58475"
+		Release.AspNetCompiler.PhysicalPath = "LumeJet.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58475\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58475"
+		SlnRelativePath = "LumeJet.Client\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36F31B1A-AC38-4FE1-AE6D-12EB504A05C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F31B1A-AC38-4FE1-AE6D-12EB504A05C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F31B1A-AC38-4FE1-AE6D-12EB504A05C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F31B1A-AC38-4FE1-AE6D-12EB504A05C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57E10E3-7937-4F50-AEF4-E0969FBCEC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57E10E3-7937-4F50-AEF4-E0969FBCEC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57E10E3-7937-4F50-AEF4-E0969FBCEC1E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57E10E3-7937-4F50-AEF4-E0969FBCEC1E}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

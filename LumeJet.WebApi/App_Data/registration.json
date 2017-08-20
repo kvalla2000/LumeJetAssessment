@@ -1,0 +1,47 @@
+[
+  {
+    "RegistrationId": 1,
+    "UserName": "Kavitha",
+    "EmailId": "kavitha@yahoo.com"
+  },
+  {
+    "RegistrationId": 2,
+    "UserName": "Smitha",
+    "EmailId": "Smitha@yahoo.com"
+  },
+  {
+    "RegistrationId": 3,
+    "UserName": "Mike",
+    "EmailId": "Mike@yahoo.com"
+  },
+  {
+    "RegistrationId": 4,
+    "UserName": "Claire",
+    "EmailId": "Claire@yahoo.com"
+  },
+  {
+    "RegistrationId": 5,
+    "UserName": "Tim",
+    "EmailId": "Tim@yahoo.com"
+  },
+  {
+    "RegistrationId": 6,
+    "UserName": "kvcd",
+    "EmailId": "kvcd@abc.com"
+  },
+  {
+    "RegistrationId": 7,
+    "UserName": "vstd",
+    "EmailId": "vstd@vst.com"
+  },
+  {
+    "RegistrationId": 8,
+    "UserName": "vrst",
+    "EmailId": "abc@yah"
+  },
+  {
+    "RegistrationId": 9,
+    "UserName": "Kavitha1",
+    "EmailId": "kv@abc.com"
+  }
+]

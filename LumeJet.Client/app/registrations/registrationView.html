@@ -1,0 +1,23 @@
+﻿<div class="panel panel-primary" ng-controller="registratonCtrl as vm">
+	<div class="panel-heading" style="font-size:large">
+				Registered Users
+			</div>
+
+			<div class="panel-body">
+				<table class="table">
+
+					<thead>
+						<tr>
+							<td>UserName</td>
+							<td>EmailId</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="registration in vm.registrations">
+							<td>{{ registration.userName}}</td>
+							<td>{{ registration.emailId }}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>		
+</div>
